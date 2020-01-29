@@ -14,7 +14,7 @@ receipient_2 = credentials.receipient_2
 def send_mail(contents,receipient):
     d_date = datetime.datetime.now()
     reg_format_date = str(d_date.strftime("%Y-%m-%d"))
-    title = reg_format_date+"_2"
+    title = reg_format_date
     yag.send(receipient, title, contents=contents)
 
 with open('./question_list.txt') as f:
